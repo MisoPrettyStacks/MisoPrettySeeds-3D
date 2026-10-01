@@ -3,106 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MisoPretty Seeds — Heirloom seeds, pretty flowers</title>
-<meta name="description" content="Small-batch flower seeds, packed with love in California. Heirloom seeds, pretty flowers. Order via DM on X.">
+<title>MisoPretty Seeds — Heirloom flower seeds</title>
+<meta name="description" content="Small-batch flower seeds, packed with love in California. Heirloom seeds, packed by hand. Order via DM on X.">
 <link rel="stylesheet" href="flower-seed-store.css">
-<style>
-  /* Bridge: the shop's extra sections, written in the theme's own token language */
-  .seed-product__add{font-size:20px;font-weight:400;line-height:1}
-  @media(min-width:761px){
-    .seed-hero__copy{top:36%}
-    .seed-hero__copy h2{max-width:20ch;font-size:clamp(34px,4.4vw,60px)}
-  }
-  .seed-scarcity{
-    max-width:640px;margin:44px auto 0;padding:14px 30px;
-    border:1px dashed var(--seed-rose);border-radius:999px;
-    color:rgba(22,37,21,.66);font-size:14px;text-align:center;line-height:1.6;
-  }
-  .seed-scarcity strong{color:var(--seed-ink);font-weight:600}
-  .seed-center{text-align:center;margin-top:40px}
-  .seed-steps{
-    display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;
-    margin:0;padding:0;list-style:none;
-  }
-  .seed-steps li{text-align:center;padding:6px}
-  .seed-steps__num{
-    display:grid;place-items:center;width:52px;height:52px;margin:0 auto 18px;
-    border:1px solid var(--seed-rose);border-radius:50%;background:var(--seed-paper);
-    color:var(--seed-rose);font-family:var(--seed-display);font-size:24px;font-weight:500;
-  }
-  .seed-steps h3{
-    margin:0 0 8px;color:var(--seed-ink);font-family:var(--seed-display);
-    font-size:21px;font-weight:500;letter-spacing:-.02em;
-  }
-  .seed-steps p{margin:0;color:rgba(22,37,21,.66);font-size:13px;line-height:1.6}
-  .seed-steps a{color:var(--seed-moss);font-weight:600}
-  .seed-about{
-    display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px);align-items:center;
-  }
-  .seed-about img{
-    width:100%;border-radius:20px;
-    box-shadow:0 24px 60px rgba(10,21,10,.18);
-  }
-  .seed-about h2{
-    margin:0 0 18px;color:var(--seed-ink);font-family:var(--seed-display);
-    font-size:clamp(34px,4.5vw,54px);font-weight:500;letter-spacing:-.05em;line-height:1;
-  }
-  .seed-about p{color:rgba(22,37,21,.72);font-size:15px;line-height:1.7;margin:0 0 16px}
-  .seed-about p strong{color:var(--seed-ink);font-weight:600}
-  .seed-sig{
-    font-family:var(--seed-display);font-style:italic;font-size:22px;color:var(--seed-moss);margin:6px 0 0;
-  }
-  .seed-faq{max-width:720px;margin:0 auto}
-  .seed-faq details{border-bottom:1px solid var(--seed-line);padding:20px 4px}
-  .seed-faq summary{
-    cursor:pointer;list-style:none;color:var(--seed-ink);
-    font-family:var(--seed-display);font-size:21px;font-weight:500;
-  }
-  .seed-faq summary::-webkit-details-marker{display:none}
-  .seed-faq summary::after{content:'+';float:right;color:var(--seed-rose);font-weight:400}
-  .seed-faq details[open] summary::after{content:'–'}
-  .seed-faq p{color:rgba(22,37,21,.66);margin:10px 0 0;font-size:14px;line-height:1.65}
-  .seed-final{
-    padding:clamp(56px,8vw,100px) 24px;text-align:center;
-    border-top:1px solid var(--seed-line);
-  }
-  .seed-final h2{
-    margin:0 0 16px;color:var(--seed-ink);font-family:var(--seed-display);
-    font-size:clamp(38px,5.5vw,64px);font-weight:500;letter-spacing:-.05em;line-height:1;
-  }
-  .seed-final p{color:rgba(22,37,21,.66);max-width:46ch;margin:0 auto 32px;font-size:15px;line-height:1.65}
-  .seed-footer strong{
-    display:block;font-family:var(--seed-display);font-size:20px;font-weight:600;
-    letter-spacing:-.02em;margin-bottom:6px;
-  }
-  .seed-footer p{margin:0;max-width:44ch;line-height:1.6}
-  .seed-footer__links a{font-weight:600;color:var(--seed-moss)}
-  .seed-fine{
-    padding:0 clamp(4px,2vw,24px) 8px;color:rgba(22,37,21,.45);
-    font-size:11px;letter-spacing:.06em;text-align:center;
-  }
-  @media(max-width:900px){
-    .seed-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
-    .seed-about{grid-template-columns:1fr}
-  }
-  @media(max-width:620px){
-    .seed-steps{grid-template-columns:1fr}
-    .seed-hero__copy h2 br{display:none}
-  }
-</style>
+
 </head>
 <body>
-<noscript><style>.seed-intro{display:none!important}</style></noscript>
-<div class="seed-intro" id="seedIntro" role="button" tabindex="0" aria-label="Enter the shop">
-  <div class="seed-intro__door seed-intro__door--left"><span class="seed-intro__handle"></span></div>
-  <div class="seed-intro__door seed-intro__door--right"><span class="seed-intro__handle"></span></div>
-  <span class="seed-intro__enter">Enter</span>
-</div>
 <div class="seed-store">
 <div class="seed-frame">
 
   <header class="seed-header">
-    <a class="seed-brand" href="#top"><img class="seed-brand__mark" src="images/logo-flower.png" alt="MisoPretty Seeds">&nbsp;MisoPretty Seeds</a>
+    <a class="seed-brand" href="#top" aria-label="MisoPretty Seeds home"><img class="seed-brand__mark" src="images/logo-flower.png" alt="">&nbsp;MisoPretty Seeds</a>
     <nav class="seed-nav" aria-label="Primary">
       <a href="#shop">Shop</a>
       <a href="#how">How it works</a>
@@ -110,39 +21,45 @@
       <a href="#faq">FAQ</a>
     </nav>
     <div class="seed-header__actions">
-      <a class="seed-button" style="min-height:40px;font-size:12px" href="https://x.com/igotglitteronme" target="_blank" rel="noopener">Order on X</a>
+      <a class="seed-button seed-button--small" href="https://x.com/igotglitteronme" target="_blank" rel="noopener">Order on X</a>
     </div>
   </header>
 
   <section class="seed-hero" id="top">
     <canvas id="seedWebgl" aria-hidden="true"></canvas>
-    <h1 class="seed-hero__headline"><span>Flower</span><span>Seeds</span></h1>
+    <p class="seed-eyebrow seed-hero__eyebrow">Small-batch flower seeds</p>
+    <h1 class="seed-hero__headline"><span>Flower</span><span class="seed-hero__accent">Seeds</span></h1>
     <div class="seed-hero__copy">
-      <p class="seed-eyebrow">Small-batch flower seeds</p>
-      <h2>Pretty flowers,<br>packed by hand</h2>
-      <p>Garden-girl approved varieties, chosen for beauty and charm — packed with love in California and shipped straight to your garden.</p>
-      <a class="seed-button seed-button--light" href="#shop">Shop the collection <span class="seed-button__arrow">→</span></a>
-    </div>
-    <aside class="seed-hero__note"><strong>Small batches</strong>germination-tested, packed with love</aside>
-    <div class="seed-hero__bottom">
-      <div class="seed-categories">
-        <span class="seed-chip">Sunflowers</span>
-        <span class="seed-chip">Cosmos</span>
-        <span class="seed-chip">Poppies</span>
-        <span class="seed-chip">Lavender</span>
-        <span class="seed-chip">Nasturtium</span>
-      </div>
-      <div class="seed-feature-card">
-        <div class="seed-feature-card__copy">
-          <h3>New varieties dropping soon</h3>
-          <p>DM for first dibs on the next small batch.</p>
-        </div>
-        <img class="seed-feature-card__image" src="images/seed-packet.png" alt="New variety coming soon">
+      <h2>Packed by hand</h2>
+      <p>Garden-girl approved varieties, chosen for beauty and charm &mdash; packed with love in California and shipped straight to your garden.</p>
+      <div class="seed-hero__ctas">
+        <a class="seed-button" href="#shop">Shop the collection <span class="seed-button__arrow">&rarr;</span></a>
+        <a class="seed-button seed-button--ghost" href="https://x.com/igotglitteronme" target="_blank" rel="noopener">DM me on X</a>
       </div>
     </div>
+    <aside class="seed-hero__badge seed-hero__badge--left"><strong>Packed by hand</strong><span>every single packet</span></aside>
+    <aside class="seed-hero__badge seed-hero__badge--right"><strong>Small-batch</strong><span>germination-tested</span></aside>
+    <a class="seed-scroll-cue" href="#shop" aria-label="Scroll to the shop"><span>scroll</span><i></i></a>
   </section>
 
-  <section class="seed-section" id="shop">
+  <div class="seed-marquee" aria-hidden="true">
+    <div class="seed-marquee__track">
+      <span>Sunflower <i>&#10047;</i></span><span>Cosmos <i>&#10047;</i></span><span>Zinnia <i>&#10047;</i></span><span>Poppy <i>&#10047;</i></span><span>Lavender <i>&#10047;</i></span><span>Nasturtium <i>&#10047;</i></span><span>Dahlia <i>&#10047;</i></span><span>Sweet Pea <i>&#10047;</i></span>
+      <span>Sunflower <i>&#10047;</i></span><span>Cosmos <i>&#10047;</i></span><span>Zinnia <i>&#10047;</i></span><span>Poppy <i>&#10047;</i></span><span>Lavender <i>&#10047;</i></span><span>Nasturtium <i>&#10047;</i></span><span>Dahlia <i>&#10047;</i></span><span>Sweet Pea <i>&#10047;</i></span>
+    </div>
+  </div>
+
+  <div class="seed-feature-banner">
+    <div class="seed-feature-card">
+      <div class="seed-feature-card__copy">
+        <h3>New varieties dropping soon</h3>
+        <p>DM for first dibs on the next small batch.</p>
+      </div>
+      <img class="seed-feature-card__image" src="images/seed-packet-white.png" alt="New variety coming soon">
+    </div>
+  </div>
+
+<section class="seed-section" id="shop">
     <div class="seed-section__heading">
       <h2>Shop the seeds</h2>
       <p>Small-batch flower seeds, collected by hand and packed with love. Choose your favorites below.</p>
@@ -150,7 +67,7 @@
     <div class="seed-product-grid">
 
       <article class="seed-product" style="--seed-delay:0ms">
-        <div class="seed-product__visual"><img src="images/seed-packet.png" alt="Common Sunflower seeds"></div>
+        <div class="seed-product__visual"><img src="images/seed-packet-white.png" alt="Common Sunflower seeds"></div>
         <div class="seed-product__details">
           <h3 class="seed-product__name">Common Sunflower</h3>
           <a class="seed-product__add" href="https://x.com/igotglitteronme" target="_blank" rel="noopener" aria-label="Order Common Sunflower via DM">+</a>
@@ -160,7 +77,7 @@
       </article>
 
       <article class="seed-product" style="--seed-delay:80ms">
-        <div class="seed-product__visual"><img src="images/seed-packet.png" alt="Cosmos seeds"></div>
+        <div class="seed-product__visual"><img src="images/seed-packet-white.png" alt="Cosmos seeds"></div>
         <div class="seed-product__details">
           <h3 class="seed-product__name">Cosmos</h3>
           <a class="seed-product__add" href="https://x.com/igotglitteronme" target="_blank" rel="noopener" aria-label="Order Cosmos via DM">+</a>
@@ -170,7 +87,7 @@
       </article>
 
       <article class="seed-product" style="--seed-delay:160ms">
-        <div class="seed-product__visual"><img src="images/seed-packet.png" alt="Mammoth Sunflower seeds"></div>
+        <div class="seed-product__visual"><img src="images/seed-packet-white.png" alt="Mammoth Sunflower seeds"></div>
         <div class="seed-product__details">
           <h3 class="seed-product__name">Mammoth Sunflower</h3>
           <a class="seed-product__add" href="https://x.com/igotglitteronme" target="_blank" rel="noopener" aria-label="Order Mammoth Sunflower via DM">+</a>
@@ -180,7 +97,7 @@
       </article>
 
       <article class="seed-product" style="--seed-delay:240ms">
-        <div class="seed-product__visual"><img src="images/seed-packet.png" alt="Nasturtium seeds"></div>
+        <div class="seed-product__visual"><img src="images/seed-packet-white.png" alt="Nasturtium seeds"></div>
         <div class="seed-product__details">
           <h3 class="seed-product__name">Nasturtium</h3>
           <a class="seed-product__add" href="https://x.com/igotglitteronme" target="_blank" rel="noopener" aria-label="Order Nasturtium via DM">+</a>
@@ -190,7 +107,7 @@
       </article>
 
       <article class="seed-product" style="--seed-delay:320ms">
-        <div class="seed-product__visual"><img src="images/seed-packet.png" alt="Poppy seeds"></div>
+        <div class="seed-product__visual"><img src="images/seed-packet-white.png" alt="Poppy seeds"></div>
         <div class="seed-product__details">
           <h3 class="seed-product__name">Poppy</h3>
           <a class="seed-product__add" href="https://x.com/igotglitteronme" target="_blank" rel="noopener" aria-label="Order Poppy via DM">+</a>
@@ -200,7 +117,7 @@
       </article>
 
       <article class="seed-product" style="--seed-delay:400ms">
-        <div class="seed-product__visual"><img src="images/seed-packet.png" alt="Lavender seeds"></div>
+        <div class="seed-product__visual"><img src="images/seed-packet-white.png" alt="Lavender seeds"></div>
         <div class="seed-product__details">
           <h3 class="seed-product__name">Lavender</h3>
           <a class="seed-product__add" href="https://x.com/igotglitteronme" target="_blank" rel="noopener" aria-label="Order Lavender via DM">+</a>
@@ -212,7 +129,7 @@
       <article class="seed-product" style="--seed-delay:480ms">
         <div class="seed-product__visual">
           <span class="seed-product__badge">Coming soon</span>
-          <img src="images/seed-packet.png" alt="New flower variety coming soon">
+          <img src="images/seed-packet-white.png" alt="New flower variety coming soon">
         </div>
         <div class="seed-product__details">
           <h3 class="seed-product__name">Flower</h3>
@@ -225,7 +142,7 @@
       <article class="seed-product" style="--seed-delay:560ms">
         <div class="seed-product__visual">
           <span class="seed-product__badge">Coming soon</span>
-          <img src="images/seed-packet.png" alt="New flower variety coming soon">
+          <img src="images/seed-packet-white.png" alt="New flower variety coming soon">
         </div>
         <div class="seed-product__details">
           <h3 class="seed-product__name">Flower</h3>
@@ -271,10 +188,10 @@
 
   <section class="seed-section" id="about">
     <div class="seed-about">
-      <div><img src="images/seed-packet.png" alt="Hand-designed MisoPretty Seeds packet"></div>
+      <div><img src="images/seed-packet-white.png" alt="Hand-designed MisoPretty Seeds packet"></div>
       <div>
         <p class="seed-eyebrow">About</p>
-        <h2>Grown with glitter</h2>
+        <h2>Grown with love</h2>
         <p>Hi, I'm the garden girl behind MisoPretty Seeds. I grow flowers in a small garden in California's Central Valley. Each variety in the shop is one I plant in my own garden: <strong>beautiful, charming, and genuinely joyful to grow</strong>. Small batches, germination-tested, and packed with love before they head to your mailbox.</p>
         <p>Whether this is your first seed ever or your five-hundredth, I'm so glad you're here. Let's grow something beautiful together.</p>
         <p class="seed-sig">— your garden girl</p>
@@ -316,7 +233,7 @@
   <footer class="seed-footer" id="contact">
     <div>
       <strong>MisoPretty Seeds</strong>
-      <p>Heirloom seeds, pretty flowers — packed with love in California.</p>
+      <p>Heirloom seeds — packed with love in California.</p>
     </div>
     <div class="seed-footer__links">
       <a href="https://x.com/igotglitteronme" target="_blank" rel="noopener">DM on X</a>
@@ -329,26 +246,5 @@
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.158.0/three.min.js"></script>
 <script src="seed-3d.js"></script>
-<script>
-(function () {
-  var intro = document.getElementById('seedIntro');
-  if (!intro) return;
-  document.body.style.overflow = 'hidden';
-  var done = false;
-  function open() {
-    if (done) return;
-    done = true;
-    intro.classList.add('seed-intro--open');
-    setTimeout(function () {
-      intro.classList.add('seed-intro--gone');
-      document.body.style.overflow = '';
-    }, 2700);
-  }
-  intro.addEventListener('click', open);
-  intro.addEventListener('keydown', function (e) {
-    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
-  });
-})();
-</script>
 </body>
 </html>
